@@ -1,8 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+/* General Styles */
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -13,3 +9,31 @@ a{
 li{
 list-style: none;
 }
+.gradient-bg {
+    background: linear-gradient(
+    to bottom left,
+    #9100F8,
+    #FB09B4,
+    #F7E93F
+  );
+  padding: 12px 24px;
+  border-radius: 24px;
+  color: white;
+}
+.gradient-bg:hover, .transparent-btn:hover{
+    background: linear-gradient(
+    to bottom left,
+     #FB09B4,
+    #9100F8,
+    #F7E93F
+  );
+  color: white;
+}
+.text-bg{
+    background: linear-gradient(
+    to bottom left,
+    #9100F8,
+    #FB09B4,
+    #F7E93F);
+}
+

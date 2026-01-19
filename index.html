@@ -4,53 +4,160 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- tawilwind css -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- raw css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- front awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navbar section start -->
-     <div class="navbar-parrent">
-       <div class="container">
-         <div class="img">
-            <img src="./assets/image/TechWave-logo.jpg" alt="">
+
+    <!-- Navbar Section Start -->
+    <div class="navbar-parrent bg-[#1A0B2E] py-6 border-b-1 border-[412567]">
+        <div class="container flex items-center justify-between">
+            <div class="logo">
+                <h1 class="text-5xl font-bold text-[#fff]">
+                    Text
+                    <span class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">
+                        Wave
+                    </span>
+                </h1>
+            </div>
+
+            <div class="menu flex items-center gap-x-10">
+                <ul class="flex items-center gap-x-10 text-white text-1xl">
+                    <li><a class="hover:text-pink-600 transition-all duration-300" href="#">About</a></li>
+                    <li><a class="hover:text-pink-600 transition-all duration-300" href="#">Host</a></li>
+                    <li><a class="hover:text-pink-600 transition-all duration-300" href="#">Podcast</a></li>
+                </ul>
+
+                <div class="nav-icon lg:hidden">
+                    <a href="#"><i class="fa-solid fa-align-right"></i></a>
+                </div>
+            </div>
+
+            <button type="button" class="btn flex items-center gap-x-2 gradient-bg cursor-pointer font-bold">
+                <a href="#">Subscribe</a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
-        <div class="menu">
-            <div class="menu-item"> <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Host</a></li>
-                <li><a href="#">Podcast</a></li>
-            </ul></div>
-            <div class="nav-icon"><a href=""></a></div>
+    </div>
+    <!-- Navbar Section End -->
+
+    <!-- Banner Section Start -->
+    <section class="banner bg-[url(/assets/image/hero-bg.png)] bg-cover bg-center bg-no-repeat h-[90vh] flex items-center justify-center">
+        <div class="container">
+            <div class="parrent-img-box flex items-center justify-center relative">
+                <div class="inner-img-box flex justify-center relative">
+                    <img class="w-[420px]" src="./assets/image/hero-circle.png" alt="">
+                    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[200px]" src="./assets/image/microphone.png" alt="">
+                    <div class="new-badge bg-[#00FF88] text-black absolute py-1 px-4 rounded-2xl bottom-1/2 right-1/4 transform -translate-x-[-85px] -translate-y-[120px]">
+                        New
+                    </div>
+                </div>
+            </div>
+
+            <div class="content text-center mt-10 text-white">
+                <h1 class="text-6xl font-bold ">TechWave</h1>
+                <p class="text-base text-[rgba(255,255,255,0.9)] py-4">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
+
+                <div class="btn-box flex items-center justify-center gap-x-6">
+                    <button type="button" class="btn flex items-center gap-x-2 gradient-bg cursor-pointer font-bold">
+                        <i class="fa-brands fa-spotify"></i>
+                        <a href="#">Listen on Spotify</a>
+                    </button>
+                    <button type="button" class="btn flex items-center gap-x-2 border border-[#00FF88] hover:border-[#FB09B4] rounded-3xl cursor-pointer font-bold text-[#00FF88] py-3 px-4 transparent-btn">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="#">Subscribe</a>
+                    </button>
+                </div>
+            </div>
         </div>
-       </div>
-     </div>
-    <!-- nav-bar section End -->
+    </section>
+    <!-- Banner Section End -->
 
-    <!-- banner section start -->
-    <!-- banner section End -->
+    <!-- Podcast Section Start -->
+    <section class="podcast bg-[#1A0B2E] py-[5rem]">
+        <div class="container text-center border-b-[#fff]">
+            <h1 class="text-5xl font-bold text-white">About the Podcast</h1>
+            <p class="text-[rgba(255,255,255,0.9)] py-4">
+                TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
+            </p>
+            <p class="text-[rgba(255,255,255,0.9)]">
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+            </p>
+        </div>
+    </section>
+    <!-- Podcast Section End -->
 
-    <!-- podcast section start -->
-    <!-- podcast section End -->
+    <!-- Counter Section Start -->
+    <section class="counter bg-[#1A0B2E] py-[5rem]">
+        <div class="container">
+            <div class="inner-item grid grid-cols-4 gap-6">
+                <div class="listners text-center">
+                    <h1 class="text-5xl font-bold text-[#00FF88]">150k+</h1>
+                    <p class="text-[rgba(255,255,255,0.9)] py-4 text-base uppercase">Monthly Listeners</p>
+                </div>
+                <div class="listners text-center">
+                    <h1 class="text-5xl font-bold text-[#00FF88]">200+</h1>
+                    <p class="text-[rgba(255,255,255,0.9)] py-4 text-base uppercase">Episodes Published</p>
+                </div>
+                <div class="listners text-center">
+                    <h1 class="text-5xl font-bold text-[#00FF88]">4.9<i class="fa-solid fa-star"></i></h1>
+                    <p class="text-[rgba(255,255,255,0.9)] py-4 text-base uppercase">Average Rating</p>
+                </div>
+                <div class="listners text-center">
+                    <h1 class="text-5xl font-bold text-[#00FF88]">0+</h1>
+                    <p class="text-[rgba(255,255,255,0.9)] py-4 text-base uppercase">Industry Experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
 
-    <!-- counter section Start-->
-    <!-- Counter section End -->
+    <!-- Why Choose Section Start -->
+    <section class="why-choose bg-[#230E3D] py-[7rem]">
+        <div class="container">
+            <h1 class="text-5xl font-bold text-white text-center">Why Choose TechWave</h1>
+            <div class="choose-card grid gap-6 mt-10 grid-cols-3">
+                <div class="card bg-[rgba(53,17,101,0.4)] py-[3.rem] px-[2.5rem] rounded-2xl row-span-2 content-center">
+                    <img src="./assets/image/headphone.png" alt="">
+                    <h3 class="py-4 text-white text-2xl">Premium Audio Quality</h3>
+                    <p class="text-[rgba(255,255,255,0.9)]">
+                        Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.
+                    </p>
+                </div>
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl col-span-2">
+                    <img src="./assets/image/device.png" alt="">
+                    <h3 class="py-4 text-white text-2xl">Mobile Friendly</h3>
+                    <p class="text-[rgba(255,255,255,0.9)]">Listen on the go with seamless mobile experience and offline downloads.</p>
+                </div>
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl col-span-2">
+                    <img src="./assets/image/location.png" alt="">
+                    <h3 class="py-4 text-white text-2xl">Global Community</h3>
+                    <p class="text-[rgba(255,255,255,0.9)]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                </div>
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl col-span-2">
+                    <img src="./assets/image/zap-fast.png" alt="">
+                    <h3 class="py-4 text-white text-2xl">Exclusive Interviews</h3>
+                    <p class="text-[rgba(255,255,255,0.9)]">
+                        Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.
+                    </p>
+                </div>
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl">
+                    <img src="./assets/image/resource.png" alt="">
+                    <h3 class="py-4 text-white text-2xl">Rich Resources</h3>
+                    <p class="text-[rgba(255,255,255,0.9)]">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Section End -->
 
-    <!-- why-choose section start -->
-    <!-- why-choose section End -->
-
-    <!-- Featured section start-->
-    <!-- featured section end -->
-
-    <!-- host section start -->
-    <!-- host section end -->
-
-    <!-- fotter section start -->
-    <!-- fotter section end -->
 </body>
 
 </html>
