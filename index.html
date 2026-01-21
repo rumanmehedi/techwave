@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,14 +10,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-
 <body>
-
     <!-- Navbar Section Start -->
-    <div class="navbar-parrent bg-[#1A0B2E] py-6 border-b-1 border-[412567]">
-        <div class="container flex items-center justify-between">
+    <div class="navbar-parrent bg-[#1A0B2E] py-6 border-b-1 border-[412567] sm:px-5">
+        <div class="container flex items-center justify-between ">
             <div class="logo">
-                <h1 class="text-5xl font-bold text-[#fff]">
+                <h1 class="text-3xl md:text-5xl font-bold text-[#fff]">
                     Text
                     <span
                         class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">
@@ -26,50 +23,46 @@
                     </span>
                 </h1>
             </div>
-
-            <div class="menu flex items-center gap-x-10">
-                <ul class="flex items-center gap-x-10 text-white text-1xl">
+            <div class="menu flex items-center gap-x-10 ">
+                <ul class=" lg:flex items-center gap-x-10 text-white text-1xl hidden ">
                     <li><a class="hover:text-pink-600 transition-all duration-300" href="#">About</a></li>
                     <li><a class="hover:text-pink-600 transition-all duration-300" href="#">Host</a></li>
                     <li><a class="hover:text-pink-600 transition-all duration-300" href="#">Podcast</a></li>
                 </ul>
-
-                <div class="nav-icon lg:hidden">
+                <div class="nav-icon bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent md:hidden block text-3xl">
                     <a href="#"><i class="fa-solid fa-align-right"></i></a>
                 </div>
             </div>
-
-            <button type="button" class="btn flex items-center gap-x-2 gradient-bg cursor-pointer font-bold">
+            <button type="button" class="btn flex items-center gap-x-2 gradient-bg cursor-pointer font-bold hidden md:block">
                 <a href="#">Subscribe</a>
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
     </div>
     <!-- Navbar Section End -->
-
     <!-- Banner Section Start -->
     <section
-        class="banner bg-[url(/assets/image/hero-bg.png)] bg-cover bg-center bg-no-repeat h-[90vh] flex items-center justify-center">
+        class="banner bg-[url(/assets/image/hero-bg.png)] bg-cover bg-center bg-no-repeat md:h-[90vh] flex items-center justify-center ]">
         <div class="container">
             <div class="parrent-img-box flex items-center justify-center relative">
                 <div class="inner-img-box flex justify-center relative">
-                    <img class="w-[420px]" src="./assets/image/hero-circle.png" alt="">
-                    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[200px]"
+                    <img class="w-[420px] circle-img" src="./assets/image/hero-circle.png" alt="">
+                    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:h-[200px] h-[70px]"
                         src="./assets/image/microphone.png" alt="">
                     <div
-                        class="new-badge bg-[#00FF88] text-black absolute py-1 px-4 rounded-2xl bottom-1/2 right-1/4 transform -translate-x-[-85px] -translate-y-[120px] ani">
+                        class="new-badge bg-[#00FF88] text-black absolute py-1 px-4 rounded-2xl bottom-1/2 right-1/4 transform
+-translate-x-[-40px] -translate-y-[60px]
+lg:-translate-x-[-85px] md:-translate-y-[120px]   ani">
                         New
                     </div>
                 </div>
             </div>
-
             <div class="content text-center mt-10 text-white">
-                <h1 class="text-6xl font-bold ">TechWave</h1>
+                <h1 class="text-3xl md:text-6xl font-bold ">TechWave</h1>
                 <p class="text-base text-[rgba(255,255,255,0.9)] py-4">
                     Your daily dose of tech insights, productivity hacks, and personal growth
                 </p>
-
-                <div class="btn-box flex items-center justify-center gap-x-6">
+                <div class="btn-box flex items-center justify-center gap-x-6 pb-[50px]">
                     <button type="button" class="btn flex items-center gap-x-2 gradient-bg cursor-pointer font-bold">
                         <i class="fa-brands fa-spotify"></i>
                         <a href="#">Listen on Spotify</a>
@@ -84,12 +77,11 @@
         </div>
     </section>
     <!-- Banner Section End -->
-
     <!-- Podcast Section Start -->
-    <section class="podcast bg-[#1A0B2E] py-[5rem]">
+    <section class="podcast bg-[#1A0B2E] md:py-[5rem] py-[3rem]">
         <div class="container text-center border-b-[#fff]">
-            <h1 class="text-5xl font-bold text-white">About the Podcast</h1>
-            <p class="text-[rgba(255,255,255,0.9)] py-4 px-68 text-base/7">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">About the Podcast</h1>
+            <p class="text-[rgba(255,255,255,0.9)] py-4 xl:px-68 text-base/7">
                 TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down
                 complex topics into digestible insights, explore productivity strategies that actually work, and share
                 stories of personal growth from industry leaders.
@@ -100,11 +92,10 @@
         </div>
     </section>
     <!-- Podcast Section End -->
-
     <!-- Counter Section Start -->
-    <section class="counter bg-[#1A0B2E] py-[5rem]">
+    <section class="counter bg-[#1A0B2E] md:py-[5rem] py-[3rem]">
         <div class="container">
-            <div class="inner-item grid grid-cols-4 gap-6">
+            <div class="inner-item grid xl:grid-cols-4 grid-cols-2  gap-3">
                 <div class="listners text-center">
                     <h1 class="text-5xl font-bold text-[#00FF88]">150k+</h1>
                     <p class="text-[rgba(255,255,255,0.9)] py-4 text-base uppercase">Monthly Listeners</p>
@@ -125,13 +116,12 @@
         </div>
     </section>
     <!-- Counter Section End -->
-
     <!-- Why Choose Section Start -->
-    <section class="why-choose bg-[#230E3D] py-[7rem]">
+    <section class="why-choose bg-[#230E3D] md:py-[5rem] py-[3rem]">
         <div class="container">
-            <h1 class="text-5xl font-bold text-white text-center">Why Choose TechWave</h1>
-            <div class="choose-card grid gap-6 mt-10 grid-cols-3">
-                <div class="card bg-[rgba(53,17,101,0.4)] py-[3.rem] px-[2.5rem] rounded-2xl row-span-2 content-center">
+            <h1 class=" text-3xl md:text-5xl font-bold text-white text-center">Why Choose TechWave</h1>
+            <div class=" choose-card grid  mt-10 md:grid-cols-2 xl:grid-cols-3 gap-[30px] px-[15px] lg:px-0">
+                <div class="card bg-[rgba(53,17,101,0.4)] py-[2.5rem] px-[2.5rem] rounded-2xl xl:row-span-2 content-center">
                     <img src="./assets/image/headphone.png" alt="">
                     <h3 class="py-4 text-white text-2xl">Premium Audio Quality</h3>
                     <p class="text-[rgba(255,255,255,0.9)]">
@@ -139,19 +129,19 @@
                         engineering. Every episode is mastered for optimal listening across all devices and platforms.
                     </p>
                 </div>
-                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl col-span-2">
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl xl:col-span-2">
                     <img src="./assets/image/device.png" alt="">
                     <h3 class="py-4 text-white text-2xl">Mobile Friendly</h3>
                     <p class="text-[rgba(255,255,255,0.9)]">Listen on the go with seamless mobile experience and offline
                         downloads.</p>
                 </div>
-                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl col-span-2">
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl lg:col-span-2">
                     <img src="./assets/image/location.png" alt="">
                     <h3 class="py-4 text-white text-2xl">Global Community</h3>
                     <p class="text-[rgba(255,255,255,0.9)]">Connect with tech enthusiasts from over 120 countries
                         worldwide.</p>
                 </div>
-                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl col-span-2">
+                <div class="card card bg-[rgba(53,17,101,0.4)] p-[2.5rem] rounded-2xl lg:col-span-2">
                     <img src="./assets/image/zap-fast.png" alt="">
                     <h3 class="py-4 text-white text-2xl">Exclusive Interviews</h3>
                     <p class="text-[rgba(255,255,255,0.9)]">
@@ -171,12 +161,11 @@
     </section>
     <!-- Why Choose Section End -->
     <!-- Featured section start -->
-    <section class="featured bg-[#1A0B2E] py-[5rem]">
+    <section class="featured bg-[#1A0B2E] md:py-[5rem] py-[3rem] px-[15px] lg:px-0">
         <div class="container">
-            <div class="featured-parrents">
-                <h1 class="text-5xl font-bold text-white text-center">Featured Episodes</h1>
-                <div class="featured-video grid grid-cols-3 mt-10 gap-[30px]">
-
+            <div class="featured-parrents px-4">
+                <h1 class="text-3xl md:text-5xl font-bold text-white text-center">Featured Episodes</h1>
+                <div class="featured-video grid xl:grid-cols-3 sm:px-[15px] mt-10 gap-[30px]">
                     <div class="video bg-[#250D44] rounded-2xl">
                         <div class="video-box relative">
                             <iframe class="rounded-t-2xl" width="100%" height="214"
@@ -186,7 +175,6 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             
                         </div>
-
                         <div class="video-content p-6">
                             <h3 class=" text-white text-2xl font-bold">The Future of AI in Everyday Life</h3>
                             <p class="text-[rgba(255,255,255,0.9)] py-[15px]">Exploring how artificial intelligence is
@@ -194,9 +182,7 @@
                                 in the next decade.</p>
                             <span class="text-[#00FF88] "><i class="fa-solid fa-clock mr-[10px]"></i>42min</span>
                         </div>
-
                     </div>
-
                     <div class="video bg-[#250D44] rounded-2xl">
                         <div class="video-box relative">
                             <iframe class="rounded-t-2xl" width="100%" height="214"
@@ -207,15 +193,12 @@
                             <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[75px] cursor-pointer"
                                 src="./assets/image/Group 9.png" alt="">
                         </div>
-
                         <div class="video-content p-6">
                             <h3 class=" text-white text-2xl font-bold">Building Better Habits for Remote Work</h3>
                             <p class="text-[rgba(255,255,255,0.9)] py-[15px]">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
                             <span class="text-[#00FF88] "><i class="fa-solid fa-clock mr-[10px]"></i>35min</span>
                         </div>
-
                     </div>
-
                     <div class="video bg-[#250D44] rounded-2xl">
                         <div class="video-box relative">
                             <iframe class="rounded-t-2xl" width="100%" height="214"
@@ -225,33 +208,30 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             
                         </div>
-
                         <div class="video-content p-6">
                             <h3 class=" text-white text-2xl font-bold">Career Growth in Tech: A Roadmap</h3>
                             <p class="text-[rgba(255,255,255,0.9)] py-[15px]">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
                             <span class="text-[#00FF88] "><i class="fa-solid fa-clock mr-[10px]"></i>51min</span>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     <!-- Featured section End -->
     <!-- host section start -->
-    <section class="host bg-[#1A0B2E] pb-[5rem]">
+    <section class="host bg-[#1A0B2E] md:pb-[5rem] py-[3rem]">
         <div class="container">
-            <div class="host-parrents">
-                <h1 class=" text-5xl font-bold text-white text-center">Meet The Host</h1>
+            <div class="host-parrents mx-[15px] px-0">
+                <h1 class=" text-3xl md:text-5xl font-bold text-white text-center">Meet The Host</h1>
                 <div class="host-box bg-[#250D44] p-[40px]  rounded-2xl mt-10">
-                    <div class="host-inner grid grid-cols-4 items-center justify-center gap-9">
-                        <div class="img col-span-1">
+                    <div class="host-inner md:grid md:grid-cols-4  items-center justify-center gap-9">
+                        <div class="img col-span-1 ">
                             <img class="w-[100%]" src="./assets/image/host.png" alt="">
                         </div>
-                        <div class="content col-span-3">
-                            <h3 class="text-white text-2xl font-bold capitalize">alex Kumar</h3>
-                            <p class="text-base text-[rgba(255,255,255,0.9)] py-[15px]">Tech entrepreneur, productivity
+                        <div class="content col-span-3 pt-[20px] md:pt-[0px]">
+                            <h3 class="text-white text-2xl font-bold capitalize text-center md:text-left">alex Kumar</h3>
+                            <p class="text-base text-[rgba(255,255,255,0.9)] py-[15px] text-center md:text-left">Tech entrepreneur, productivity
                                 expert, and lifelong learner. Alex has been in the tech industry for over 10 years,
                                 working with startups and Fortune 500 companies. Through TechWave, Alex shares insights
                                 from industry leaders and practical advice for anyone looking to grow in tech.</p>
@@ -273,8 +253,7 @@
     </section>
     <!-- Host section End -->
     <!-- fotter section start -->
-    <section class="fotter bg-[#230E3D] py-[5rem]">
-        <div class="container">
+    <section class="fotter bg-[#230E3D] md:py-[5rem] py-[2rem]"><div class="container">
             <div class="fotter-parrents text-center">
                 <h1 class="text-5xl font-bold text-[#fff]">
                     Text
@@ -284,13 +263,12 @@
                     </span>
                 </h1>
                 <div class="socail-btn">
-                    <div class="btn-box flex items-center justify-center gap-x-6 py-[15px]">
+                    <div class="btn-box grid grid-cols-2 justify-center-safe gap-[15px] md:flex items-center justify-center gap-x-6 py-[15px]">
                         
                         <button type="button" class="btn flex items-center gap-x-2 text-white cursor-pointer font-bold">
                             <i class="fa-brands fa-spotify"></i>
                             <a class="text-[#FFFFFF80]" href="#">Listen on Spotify</a>
                         </button>
-
                          <button type="button" class="btn flex items-center gap-x-2 text-white cursor-pointer font-bold">
                             <i class="fa-brands fa-spotify"></i>
                             <a class="text-[#FFFFFF80]" href="#">Apple Podcasts</a>
@@ -301,7 +279,6 @@
                             <i class="fa-brands fa-spotify"></i>
                             <a class="text-[#FFFFFF80]" href="#">Twitter</a>
                         </button>
-
                     </div>
                 </div>
                 <div class="copy-right">
@@ -311,7 +288,5 @@
         </div>
     </section>
     <!-- Footer section End -->
-
 </body>
-
 </html>

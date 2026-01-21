@@ -36,6 +36,11 @@ list-style: none;
     #FB09B4,
     #F7E93F);
 }
+ .banner{
+    background-image: url(../image/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+  }
 
 .ani {
   animation: floating 4s ease-in-out infinite;
@@ -60,4 +65,26 @@ list-style: none;
   100% {
     transform: translateY(0);
   }
+}
+/* responsive */
+@media (max-width: 576px) {
+ .container{
+  width: 100%;
+  padding: 0 15px !important;
+ }
+  .banner{
+    background-image: url(../image/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+  }
+.banner .circle-img {
+    max-width: 250px;
+    margin: 80px auto 30px ;
+}
+.gradient-bg {
+  padding: 12px 12px;
+}
+.socail-icon{
+  justify-content: center;
+}
 }
